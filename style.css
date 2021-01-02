@@ -1,0 +1,252 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("shark.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Header */
+
+.nav-wrapper {
+  width: 80%;
+  height: 130px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-side,
+.right-side {
+  display: flex;
+}
+
+.dot {
+  margin-left: 30px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.burger {
+  position: relative;
+  bottom: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.img {
+  cursor: pointer;
+}
+
+/* main */
+
+.main-container {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+.searchbox-container {
+  display: flex;
+}
+
+.searchbox {
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 5px;
+  height: 50px;
+  width: 50%;
+  margin-left: 35px;
+}
+
+.pos {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.input {
+  background-color: white;
+  font-size: 18px;
+  padding-left: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 48px;
+  width: 80%;
+  margin-right: auto;
+}
+
+.input:focus {
+}
+
+.logo {
+  width: 120px;
+}
+.blue {
+  color: teal;
+}
+
+.pos > div:last-child {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* buttons */
+
+.bottom-container {
+  height: 385px;
+  display: flex;
+  justify-content: right;
+  align-items: flex-end;
+}
+
+.buttons {
+  display: flex;
+  margin-right: 50px;
+}
+
+.location {
+  background-color: #333333;
+  border-radius: 5px;
+  height: 40px;
+  width: 60px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.loc {
+  margin-left: 5px;
+}
+
+.back {
+  background-color: #333333;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next {
+  background-color: #333333;
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Footer */
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  background-color: #333333;
+  height: 50px;
+  width: 100%;
+  padding-left: 100px;
+}
+
+ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  background-color: red;
+  color: #727272;
+}
+
+li {
+  position: relative;
+  top: 15px;
+  display: block;
+  float: left;
+  margin-left: 30px;
+}
+
+/* RESPONSIV RULES */
+
+@media screen and (max-width: 473px) {
+  body {
+    background-image: url(shark-small.jpg);
+    background-position: top;
+  }
+
+  .searchbox-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  .bottom-container {
+    height: 350px;
+    display: flex;
+    justify-content: right;
+    align-items: flex-end;
+  }
+
+  .searchbox {
+    width: 80%;
+  }
+  .footer-container {
+    display: none;
+  }
+}
+
+/* .singin, .material-icons {
+    float: left;
+} */
+
+/* .material-icons {
+    position: relative;
+    bottom: 10px;
+    margin-left: 30px;
+
+} */
+
+/* .pos {
+    position: relative;
+    top: 20px;
+    margin-left: 450px;
+} */
+
+/* .loc {
+    position: relative;
+    top: 8px;
+    right: 28px;
+} */
+
+/* .bac {
+    position: relative;
+    top: 8px;
+    right: 18px;
+} */
+
+/* .nex {
+    position: relative;
+    top: 8px;
+    right: 23px;
+} */
